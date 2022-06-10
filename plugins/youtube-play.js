@@ -13,9 +13,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ⌚ *Duration:* ${durationH}
 👁️ *Views:* ${viewH}
   `.trim(), author, thumbnail, url, 'Go to YouTube', null, null, [
-    ['SONG', `${usedPrefix}yta ${url} yes`],
-    ['VIDEO', `${usedPrefix}ytv ${url} yes`],
-    ['Youtube Search🔎', `${usedPrefix}yts ${url}`]
+    ['موسيقى', `${usedPrefix}yta ${url} yes`],
+    ['فيديو', `${usedPrefix}ytv ${url} yes`],
+    ['نتائج بحث أخرى', `${usedPrefix}yts ${url}`]
   ], m)
 }
 handler.help = ['play', 'play2'].map(v => v + '')
