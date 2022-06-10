@@ -1,6 +1,6 @@
 import { wikipedia } from '@bochilteam/scraper'
 let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `Usage examples ${usedPrefix}${command} Minecraft`
+  if (!text) throw `Usage examples ${usedPrefix}${command} Cheb laarbi`
   let json = await wikipedia(text)
   m.reply(`
 *${json.title}*
