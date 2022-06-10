@@ -41,7 +41,7 @@ const defaultMenu = {
 ┗━━━━━━━━━━━━━━━━⦂
 %readmore`.trimStart(),
   header: '╭━━━❰ %category ❱',
-  body: '┃ ⚜️ %cmd %islimit %isPremium',
+  body: '┃ 🍑 %cmd %islimit %isPremium',
   footer: '╰━━━━━━━⦂\n',
   after: `
 𝙈𝙐𝙃𝘼𝙈𝙈𝙀𝘿 𝘽𝙀𝙇𝙇𝘼 | @𝙬𝙤𝙭_𝙗𝙚𝙡𝙡𝙖 
@@ -146,9 +146,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './media/arctix.jpg')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://www.instagram.com/sibssssssss', 'INSTAGRAM', owner[0][0], 'OWNER', [
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://www.instagram.com/wox_bella', 'أنستغرام', owner[0][0], 'OWNER', [
       ['BOTGROUP', '/donasi'],
-      ['SPEED', '/ping'],
+      ['SC', '/sc'],
       ['OWNER', '/owner']
     ], m, { asLocation: 1 })
   } catch (e) {
